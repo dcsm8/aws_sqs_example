@@ -1,0 +1,11 @@
+### Test sending a message to SQS
+POST http://127.0.0.1:8000/send-message/
+Content-Type: application/json
+
+{
+    "action": "process_data",
+    "data": {
+        "key1": "value1",
+        "key2": "value2"
+    }
+}
